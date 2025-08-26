@@ -69,28 +69,11 @@ public class Program
         return false;
     }
 
-    static bool TryGetMapping(YamlMappingNode root, string key, out YamlMappingNode? value)
+    static bool TryGetNode<T>(YamlMappingNode root, string key, out T? value) where T : YamlNode
     {
         foreach (var keyValuePair in root.Children)
         {
-            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode.Value, key, StringComparison.OrdinalIgnoreCase))
-            {
-                if (keyValuePair.Value is not YamlMappingNode mapping) continue;
-
-                value = mapping;
-                return true;
-            }
-        }
-
-        value = default;
-        return false;
-    }
-
-    static bool TryGet<T>(YamlMappingNode root, string key, out T? value)
-    {
-        foreach (var keyValuePair in root.Children)
-        {
-            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode.Value, key, StringComparison.OrdinalIgnoreCase))
+            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode?.Value??"invalid", key, StringComparison.Ordinal))
             {
                 if (keyValuePair.Value is not T t) continue;
                 value = t;
@@ -98,7 +81,7 @@ public class Program
             }
         }
 
-        value = default;
+        value = default!;
         return false;
     }
 }
