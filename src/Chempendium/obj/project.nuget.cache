@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lY+t4DrSX0c=",
+  "dgSpecHash": "pG5UQQe7gyc=",
   "success": true,
   "projectFilePath": "/workspaces/Chempendium/src/Chempendium/Chempendium.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/yamldotnet/16.2.1/yamldotnet.16.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

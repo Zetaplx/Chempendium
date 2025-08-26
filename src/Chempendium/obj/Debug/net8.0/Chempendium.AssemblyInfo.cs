@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chempendium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+295e37a1fb86314ba977b4421e03edb6e6190ae3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e11c65fa6b9919a3b93f0d02ce0b2559e4814e0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chempendium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chempendium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
