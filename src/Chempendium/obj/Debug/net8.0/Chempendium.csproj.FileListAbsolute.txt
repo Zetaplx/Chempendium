@@ -1,0 +1,15 @@
+/workspaces/Chempendium/src/Chempendium/bin/Debug/net8.0/Chempendium
+/workspaces/Chempendium/src/Chempendium/bin/Debug/net8.0/Chempendium.deps.json
+/workspaces/Chempendium/src/Chempendium/bin/Debug/net8.0/Chempendium.runtimeconfig.json
+/workspaces/Chempendium/src/Chempendium/bin/Debug/net8.0/Chempendium.dll
+/workspaces/Chempendium/src/Chempendium/bin/Debug/net8.0/Chempendium.pdb
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.AssemblyInfoInputs.cache
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.AssemblyInfo.cs
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.csproj.CoreCompileInputs.cache
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.sourcelink.json
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.dll
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/refint/Chempendium.dll
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.pdb
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/Chempendium.genruntimeconfig.cache
+/workspaces/Chempendium/src/Chempendium/obj/Debug/net8.0/ref/Chempendium.dll
