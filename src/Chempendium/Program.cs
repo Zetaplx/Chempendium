@@ -31,49 +31,19 @@ public class Program
                 foreach (var item in node)
                 {
                     if (item is not YamlMappingNode components) continue;
-
+                    if(TryGetNode<YamlScalarNode>(components, "id", out var id)) {
+                        Console.WriteLine($"{id}");
+                    }
                 }
             }
         }
     }
-
-    static bool TryGetScalar(YamlMappingNode root, string key, out YamlScalarNode? value)
-    {
-        foreach (var keyValuePair in root.Children)
-        {
-            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode.Value, key, StringComparison.OrdinalIgnoreCase))
-            {
-                if (keyValuePair.Value is not YamlScalarNode scalar) continue;
-                value = scalar;
-                return true;
-            }
-        }
-
-        value = default;
-        return false;
-    }
-
-    static bool TryGetSequence(YamlMappingNode root, string key, out YamlSequenceNode? value)
-    {
-        foreach (var keyValuePair in root.Children)
-        {
-            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode.Value, key, StringComparison.OrdinalIgnoreCase))
-            {
-                if (keyValuePair.Value is not YamlSequenceNode sequence) continue;
-                value = sequence;
-                return true;
-            }
-        }
-
-        value = default;
-        return false;
-    }
-
+    
     static bool TryGetNode<T>(YamlMappingNode root, string key, out T? value) where T : YamlNode
     {
         foreach (var keyValuePair in root.Children)
         {
-            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode?.Value??"invalid", key, StringComparison.Ordinal))
+            if (keyValuePair.Key is YamlScalarNode keyNode && string.Equals(keyNode?.Value ?? "invalid", key, StringComparison.Ordinal))
             {
                 if (keyValuePair.Value is not T t) continue;
                 value = t;

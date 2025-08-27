@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "pG5UQQe7gyc=",
+  "dgSpecHash": "N17aMpkQc1w=",
   "success": true,
-  "projectFilePath": "/workspaces/Chempendium/src/Chempendium/Chempendium.csproj",
+  "projectFilePath": "C:\\GitHub\\Chempendium\\src\\Chempendium\\Chempendium.csproj",
   "expectedPackageFiles": [
-    "/home/codespace/.nuget/packages/yamldotnet/16.2.1/yamldotnet.16.2.1.nupkg.sha512"
+    "C:\\Users\\kylgr\\.nuget\\packages\\yamldotnet\\16.2.1\\yamldotnet.16.2.1.nupkg.sha512",
+    "C:\\Users\\kylgr\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\kylgr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\kylgr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
+    "C:\\Users\\kylgr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.14\\microsoft.netcore.app.host.win-x64.8.0.14.nupkg.sha512"
   ],
   "logs": []
 }
